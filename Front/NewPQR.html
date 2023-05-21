@@ -54,18 +54,23 @@
     <div class="form-container">
         <label for="text-input">Redacte Su Solicitud</label>
         <textarea id="text-input" class="text-input" placeholder="Ingresa un texto"></textarea>
-      
+
         <label for="combo-box">Seleccione una categoría</label>
         <select id="combo-box" class="combo-box">
-          <option value="1">Peticiones</option>
-          <option value="2">Quejas</option>
-          <option value="3">Reclamos</option>
-          <option value="4">Sugerencias</option>
+            <option value="1">Peticiones</option>
+            <option value="2">Quejas</option>
+            <option value="3">Reclamos</option>
+            <option value="4">Sugerencias</option>
         </select>
-      
+        
+        <label for="file">Adjunte si hay evidencias</label>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="archivo">
+        </form>
+
         <button id="btn">Enviar</button>
-      </div>
-      
+    </div>
+
 
 
 </body>
