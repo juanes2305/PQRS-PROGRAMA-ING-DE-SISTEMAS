@@ -195,8 +195,14 @@ a svg {
   width: 500px;
 }
 
+.asunto-input{
+    height: 50px; 
+    width: 500px;
+    resize: vertical;
+}
+
 .text-input {
-  height: 150px; /* Ajusta la altura según tus necesidades */
+  height: 150px; 
   resize: vertical;
 }
 

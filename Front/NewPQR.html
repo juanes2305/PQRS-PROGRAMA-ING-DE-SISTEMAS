@@ -7,9 +7,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/NewPQR.css'>
-    <script src='js/menu.js'></script>
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-    <script src='js/scripts.js'></script>
 
 
 </head>
@@ -52,17 +50,28 @@
     <br>
 
     <div class="form-container">
+
+        <label for="asunto-input">Asunto</label>
+        <textarea id="asunto-input" class="asunto-input" placeholder="Ingresa El Asunto"></textarea>
+
         <label for="text-input">Redacte Su Solicitud</label>
-        <textarea id="text-input" class="text-input" placeholder="Ingresa un texto"></textarea>
+        <textarea id="text-input" class="text-input" placeholder="Ingrese la descripcion"></textarea>
 
         <label for="combo-box">Seleccione una categoría</label>
-        <select id="combo-box" class="combo-box">
+        <select id="combo-box-Categoria" class="combo-box">
             <option value="1">Peticiones</option>
             <option value="2">Quejas</option>
             <option value="3">Reclamos</option>
             <option value="4">Sugerencias</option>
         </select>
-        
+
+        <label for="combo-box">Dirigida a</label>
+        <select id="combo-box-Area" class="combo-box">
+            <option value="1">Sistemas</option>
+            <option value="2">Docentes</option>
+            <option value="3">Administrativa</option>
+        </select>
+
         <label for="file">Adjunte si hay evidencias</label>
         <form action="upload.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="archivo">
@@ -72,6 +81,8 @@
     </div>
 
 
+    <script src='js/menu.js'></script>
+    <script src='js/scripts.js'></script>
 
 </body>
 
