@@ -1,66 +1,38 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
-    <script src='js/menu.js'></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-    <script src='js/scripts.js'></script>
-
-
-</head>
-
-
-<body>
-    <header>
-        <div class="divlogo">
-            <img src="img/logo.png" alt="" id="logo">
-        </div>
-        <div class="textencabezado">
-            <li>
-                <a href="index.html"><h2>SISTEMA PQRS <br> ing. de sistemas</h2></a>
-            </li>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="inforPer.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="invest.html">PQRS</a>
-                    </li>
-                    <li>
-                        <a href="product.html">COMO REALIZAR UN PQRS</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div id="sideNavigation" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <nav class="topnav">
-            <a href="#" onclick="openNav()">
-                <svg width="30" height="30" id="icoOpen">
-                    <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-                    <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-                    <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-                </svg>
-            </a>
-        </nav>
-    </header>
-
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/StyleLogin.css">
+     
     
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    
+    <form id="formm">
+        <h1 class="title">login</h1>
+        <label for="email">
+            <i class="fa-solid fa-user"></i>
+            <input placeholder="Correo electronico" type="text" id="email">
+        </label>
+        <label for="password">
+            <i class="fa-solid fa-lock"></i>
+            <input placeholder="password" type="password" id="password">
+        </label> 
+        <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+                        <a href="preguntasFrecuentes.html">
+                    <div id="Div_PF">
+                    
+                        Preguntas Frecuentes
+                    </div>
+                </a>
+                <button id="login">Login</button>
+        
+    </form>
+    <script src="JS/scripyLogin.js"></script>
 </body>
-
 </html>
