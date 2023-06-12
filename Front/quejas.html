@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PQRS | Quejas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/newPQR.css'>
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src="header-template.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+
+<body>
+    <div id="header"></div>
+
+    <main id="Main">
+        <div class="form-container" style="margin-top: 7rem;">
+
+            <label for="nombre_usuario">Nombre de usuario</label>
+            <textarea id="nombre_usuario" class="asunto-input" placeholder="Ingresa el nombre de usuario"></textarea>
+    
+            <label for="solicitud">Redacte Su Solicitud</label>
+            <textarea id="solicitud" class="text-input" placeholder="Ingrese la descripcion"></textarea>
+    
+            <button id="btn" onclick="generarQueja()">Enviar</button>
+        </div>
+    </main>
+    
+
+
+    <script src='js/menu.js'></script>
+    <script src='js/quejas.js'></script>
+
+</body>
+
+</html>
