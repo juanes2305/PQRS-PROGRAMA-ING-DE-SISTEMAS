@@ -1,0 +1,31 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA4UZTVJRNYIZ2V7OS
+      secret-key: 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
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+
+application:
+  bucket:
+    name: pqrs-docs
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
