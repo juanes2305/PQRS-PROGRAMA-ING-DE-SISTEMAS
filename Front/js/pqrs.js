@@ -1,6 +1,6 @@
 
 const listarCategorias = () => {
-  fetch("http://localhost:8080/tipo/all")
+  fetch("http://pqrs.us-east-1.elasticbeanstalk.com/tipo/all")
     .then((response) => response.json())
     .then((data) => {
       let selectCategoria = document.getElementById("combo-box-Categoria");
@@ -15,7 +15,7 @@ const listarCategorias = () => {
 };
 
 const listarAreas = () => {
-  fetch("http://localhost:8080/area/all")
+  fetch("http://pqrs.us-east-1.elasticbeanstalk.com/area/all")
     .then((response) => response.json())
     .then((data) => {
       let selectArea = document.getElementById("combo-box-Area");
